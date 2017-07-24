@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>左边定宽，右边自适应(浮动和负边距实现)</title>
+	<link rel="stylesheet" href="">
+	<style type="text/css" media="screen">
+		*{
+			margin:0;
+			padding: 0
+		}
+		#left{
+			float: left;
+			width:200px;
+			/*margin-right: -100%;    两种方法均可行*/   
+			margin-right:-200px;
+			background: green;
+		}
+		#content{
+			float:left;
+			width:100%;
+		}
+		#contentInner{
+			margin-left:200px;
+			background: red
+		}
+	</style>
+</head>
+<body>
+	<div id="left">
+    Left Sidebar
+  </div>
+  <div id="content">
+      <div id="contentInner">
+          Main Content
+      </div>
+  </div>
+</body>
+</html>
