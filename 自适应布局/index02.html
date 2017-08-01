@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>三列自适应</title>
+	<link rel="stylesheet" href="">
+	<style>
+		.table-layout{
+			display: table;
+			width:100%;
+			height: 300px;
+			border:1px solid gray;
+		}
+		.table-layout div{
+			display: table-cell;    /*相当于浮动*/
+			vertical-align: middle;
+			text-align: center;
+		}
+		.left,.right{
+			background: orange;
+		}
+	/*	display:table-cell下的列表布局最适用的场景是：列表个数不固定，但是，无论列表几个，都平分容器空间。什么意思呢？就是如果4个列表，希望每个宽度25%，3个就33.3333%，2个列表希望每个宽度50%。父级设置display:table同时宽度为容器宽度，或者直接width:100%，此时，display:table-cell子元素就会自动等分。可实现文字的垂直居中*/
+	</style>
+</head>
+<body>
+	<div class='table-layout'>
+		<div class='left'>left content</div>
+		<div class='center'>center content</div>
+		<div class='right'>right content</div>
+	</div>
+</body>
+</html>
