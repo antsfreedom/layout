@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style type="text/css" media="screen">
+	*{
+		margin:0;
+		padding:0;
+	}
+	ul li{
+		list-style: none;
+	}
+		.box{
+			margin:0 auto;
+			width:400px;
+			border:1px solid #000;
+		}
+		.title,.cont{
+			display: inline-block;
+		}
+		li{
+			display: table;
+		}
+		.title{
+		display: table-cell;
+		vertical-align: middle;
+		position: relative;
+		width: 90px;
+		padding-right: 5px;
+		text-align: justify;
+		text-align-last: justify;
+	}
+	.title:after{
+		position: absolute;
+		right: 0;
+		content: ':';
+	}
+	.cont{
+		float:left;
+		margin-left: 30px;
+	}
+
+	/*page页面*/
+	.page{
+			position: relative;
+			width:200px;
+			height:300px;
+			border:1px solid red;
+			border-radius: 10px;
+		}
+		.page:after{
+			position: absolute;
+			right:-1px;
+			top:-1px;
+			content: "";
+			display: block;
+      width:0;
+      height:0;
+      border:20px solid red;
+      border-top-color:white;
+      border-right-color:white;
+      border-bottom-left-radius: inherit;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul>
+			<li>
+				<span class="title">手机号</span>
+				<span class="cont">122379753</span>
+			</li>
+			<li>
+				<span class="title">身份证号</span>
+				<span class="cont">3836368272806868</span>
+			</li>
+			<li>
+				<span class="title">地址</span>
+				<span class="cont">哈撒及私有化维吾尔族自治区哈撒及私有化维吾尔族自治区化维吾尔族自治区</span>
+			</li>
+		</ul>
+	</div>
+	<div class="page">我是页面</div>
+</body>
+</html>
